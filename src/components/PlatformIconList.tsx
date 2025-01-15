@@ -2,7 +2,6 @@ import {
   FaWindows,
   FaPlaystation,
   FaXbox,
-  FaFirefoxBrowser,
   FaApple,
   FaLinux,
   FaAndroid,
