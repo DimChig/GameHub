@@ -8,14 +8,14 @@ import {
   ListItem,
   Skeleton,
   SkeletonText,
-  Text,
 } from "@chakra-ui/react";
 
 interface Props {
+  selectedGenre: Genre | null;
   onSelectGenre: (genre: Genre) => void;
 }
 
-const GenreList = ({ onSelectGenre }: Props) => {
+const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
   const { data, error, isLoading } = useGenres();
 
   if (error) return null;
@@ -57,6 +57,7 @@ const GenreList = ({ onSelectGenre }: Props) => {
               onClick={() => onSelectGenre(genre)}
               fontSize="lg"
               variant="link"
+              fontWeight={genre.id == selectedGenre?.id ? "bold" : "normal"}
             >
               {genre.name}
             </Button>
