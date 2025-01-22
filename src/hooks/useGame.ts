@@ -1,4 +1,4 @@
-import { Game } from "@/entities/Game";
+import Game from "@/entities/Game";
 import APIClient from "@/services/api-client";
 import { useQuery } from "@tanstack/react-query";
 
