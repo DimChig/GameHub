@@ -9,6 +9,7 @@ const GameTrailer = ({ gameId }: Props) => {
   const { data, isLoading, error } = useTrailers(gameId);
 
   if (error || !data) return null;
+
   if (isLoading) return <Spinner />;
 
   const trailer = data.results[0];
