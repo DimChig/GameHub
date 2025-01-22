@@ -1,4 +1,4 @@
-import { Badge, Box, Button, HStack, Text } from "@chakra-ui/react";
+import { Box, Button, Text } from "@chakra-ui/react";
 import { useState } from "react";
 
 interface Props {
